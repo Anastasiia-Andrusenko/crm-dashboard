@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<!------------------ CONTAINER------------->
+		<div class="container">
+			<!------------------ ASIDE BAR ------------->
+			<aside class="sidebar">
+				<div class="menu-wrapper">
+					<a class="sidebar__logo" href="./index.html">
+						<svg width="37" height="37" class="sidebar__logo-icon">
+							<use href="./img/symbols.svg#logo"></use>
+						</svg>
+						<p>Dashboard <span class="sidebar__logo-version">v.01</span></p>
+					</a>
+					<nav class="sidebar__nav">
+						<ul class="sidebar__menu">
+							<li class="sidebar__item">
+								<a class="sidebar__link" href="./index.html">
+									<p class="sidebar__link-content">
+										<svg
+											width="24"
+											height="24"
+											class="sidebar__link-icon stroke"
+										>
+											<use href="./img/symbols.svg#key"></use>
+										</svg>
+										Dashboard
+									</p>
+									<svg width="16" height="16" class="sidebar__link-chevron">
+										<use href="./img/symbols.svg#chevron-right"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="sidebar__item">
+								<a class="sidebar__link" href="./product.html">
+									<p class="sidebar__link-content">
+										<svg width="24" height="24" class="sidebar__link-icon fill">
+											<use href="./img/symbols.svg#square"></use>
+										</svg>
+										Product
+									</p>
+									<svg width="16" height="16" class="sidebar__link-chevron">
+										<use href="./img/symbols.svg#chevron-right"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="sidebar__item current">
+								<a class="sidebar__link" href="./customers.html">
+									<p class="sidebar__link-content current_text">
+										<svg
+											width="24"
+											height="24"
+											class="sidebar__link-icon stroke current-i"
+										>
+											<use href="./img/symbols.svg#user"></use>
+										</svg>
+										Customers
+									</p>
+									<svg
+										width="16"
+										height="16"
+										class="sidebar__link-chevron current-i"
+									>
+										<use href="./img/symbols.svg#chevron-right"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="sidebar__item">
+								<a class="sidebar__link" href="./income.html">
+									<p class="sidebar__link-content">
+										<svg
+											width="24"
+											height="24"
+											class="sidebar__link-icon stroke"
+										>
+											<use href="./img/symbols.svg#wallet"></use>
+										</svg>
+										Income
+									</p>
+									<svg width="16" height="16" class="sidebar__link-chevron">
+										<use href="./img/symbols.svg#chevron-right"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="sidebar__item">
+								<a class="sidebar__link" href="./promote.html">
+									<p class="sidebar__link-content">
+										<svg width="24" height="24" class="sidebar__link-icon fill">
+											<use href="./img/symbols.svg#discount"></use>
+										</svg>
+										Promote
+									</p>
+									<svg width="16" height="16" class="sidebar__link-chevron">
+										<use href="./img/symbols.svg#chevron-right"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="sidebar__item">
+								<a class="sidebar__link" href="./help.html">
+									<p class="sidebar__link-content">
+										<svg width="24" height="24" class="sidebar__link-icon fill">
+											<use href="./img/symbols.svg#message-question"></use>
+										</svg>
+										Help
+									</p>
+									<svg width="16" height="16" class="sidebar__link-chevron">
+										<use href="./img/symbols.svg#chevron-right"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="sidebar__footer">
+					<div class="user">
+						<div class="user__avatar"></div>
+						<div class="user__info">
+							<span class="user__info-name">Evano</span>
+							<span class="user__info-role">Project Manager</span>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<!--MENU-MOBILE-->
+			<div class="mobile-menu-container js-menu-container" id="mobile-menu">
+				<button type="button" class="menu-toggle js-close-menu">
+					<svg width="30" height="30" aria-label="close menu">
+						<use class="icon-cross" href="./img/symbols.svg#cross"></use>
+					</svg>
+				</button>
+				<a class="sidebar__logo" href="./index.html">
+					<svg width="37" height="37" class="sidebar__logo-icon">
+						<use href="./img/symbols.svg#logo"></use>
+					</svg>
+					<p>Dashboard <span class="sidebar__logo-version">v.01</span></p>
+				</a>
+				<nav class="mobile-nav-container sidebar__nav">
+					<ul class="mob-nav sidebar__menu">
+						<li class="mob-nav__item">
+							<a class="sidebar__link" href="./index.html">
+								<p class="sidebar__link-content">
+									<svg width="24" height="24" class="sidebar__link-icon stroke">
+										<use href="./img/symbols.svg#key"></use>
+									</svg>
+									Dashboard
+								</p>
+							</a>
+						</li>
+						<li class="mob-nav__item">
+							<a class="sidebar__link" href="./product.html">
+								<p class="sidebar__link-content">
+									<svg width="24" height="24" class="sidebar__link-icon fill">
+										<use href="./img/symbols.svg#square"></use>
+									</svg>
+									Product
+								</p>
+							</a>
+						</li>
+						<li class="mob-nav__item current">
+							<a class="sidebar__link" href="./customers.html">
+								<p class="sidebar__link-content current_text">
+									<svg
+										width="24"
+										height="24"
+										class="sidebar__link-icon stroke current-i"
+									>
+										<use href="./img/symbols.svg#user"></use>
+									</svg>
+									Customers
+								</p>
+							</a>
+						</li>
+						<li class="mob-nav__item">
+							<a class="sidebar__link" href="./income.html">
+								<p class="sidebar__link-content">
+									<svg width="24" height="24" class="sidebar__link-icon stroke">
+										<use href="./img/symbols.svg#wallet"></use>
+									</svg>
+									Income
+								</p>
+							</a>
+						</li>
+						<li class="mob-nav__item">
+							<a class="sidebar__link" href="./promote.html">
+								<p class="sidebar__link-content">
+									<svg width="24" height="24" class="sidebar__link-icon fill">
+										<use href="./img/symbols.svg#discount"></use>
+									</svg>
+									Promote
+								</p>
+							</a>
+						</li>
+						<li class="mob-nav__item">
+							<a class="sidebar__link" href="./help.html">
+								<p class="sidebar__link-content">
+									<svg width="24" height="24" class="sidebar__link-icon fill">
+										<use href="./img/symbols.svg#message-question"></use>
+									</svg>
+									Help
+								</p>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!------------------ MAIN CONTENT------------->
+			<main class="main">
+				<p class="welcome">Hello Evano 👋🏼,</p>
+				<button
+					type="button"
+					class="menu-btn js-open-menu"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+				>
+					<svg width="40" height="40" aria-label="open mobile-menu">
+						<use class="icon-menu" href="./img/symbols.svg#menu"></use>
+					</svg>
+				</button>
+				<section class="section">
+					<h1 class="title">All Customers</h1>
+					<p class="description">Active Members</p>
+					<div class="search">
+						<svg width="24" height="24" class="search__icon stroke">
+							<use href="./img/symbols.svg#search"></use>
+						</svg>
+						<input type="text" placeholder="Search" class="search__input" />
+					</div>
+					<div id="customer-table">
+						<!-- GENERATED TABLE -->
+					</div>
+					<div id="pagination" class="pagination">
+						<!-- GENERATED PAGINATION -->
+					</div>
+					<p class="pagination__info"><!-- GENERATED PAGINATION INFO --></p>
+				</section>
+			</main>
+		</div>
+		<script src="./js/main.js"></script>
+		<script src="./js/mobMenu.js"></script>
+	</body>
+</html>

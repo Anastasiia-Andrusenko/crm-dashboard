@@ -1,0 +1,53 @@
+.dashboard__section {
+	position: relative;
+	min-width: 240px;
+	padding: 10px;
+	background: $second-background-color;
+	border-radius: 30px;
+	filter: drop-shadow(0px 10px 60px rgba(226, 236, 249, 0.5));
+	margin-bottom: 40px;
+	transition: all 250ms $cubic-bezier;
+
+	@media screen and (min-width: $tablet) {
+		width: 500px;
+		padding: 20px 30px 30px 30px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 968px;
+		padding: 30px 39px 41px 39px;
+	}
+}
+
+.dashboard__section:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.dashboard__title {
+	color: #000;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: -0.22px;
+	margin-bottom: 7px;
+
+	@media screen and (min-width: $tablet) {
+		font-size: 22px;
+	}
+}
+
+.dashboard__description {
+	color: $accent-color;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: -0.14px;
+}
+
+.dashboard__text {
+	margin-top: 10px;
+	font-size: 14px;
+
+	@media screen and (min-width: $tablet) {
+		font-size: 16px;
+	}
+}

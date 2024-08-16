@@ -1,0 +1,60 @@
+.sidebar {
+	display: none;
+	opacity: 0;
+
+	@media screen and (min-width: $desktop) {
+		display: flex;
+		opacity: 1;
+	}
+}
+
+.mobile-menu-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 900;
+	opacity: 0;
+
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	padding: 80px 40px;
+	transform: translateY(-100%);
+
+	background-color: $main-color;
+	transition: transform 600ms $cubic-bezier, opacity 300ms $cubic-bezier;
+
+	&.is-open {
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	@media screen and (min-width: $tablet) {
+		display: none;
+		opacity: 0;
+	}
+}
+
+.menu-btn,
+.menu-toggle {
+	position: absolute;
+	top: 18px;
+	right: 16px;
+	background-color: transparent;
+
+	@media screen and (min-width: $tablet) {
+		display: none;
+		opacity: 0;
+	}
+}
+
+.mob-nav__item {
+	border-radius: 30px;
+	text-align: center;
+}
+
+.sidebar__link {
+	font-size: 18px;
+	padding: 12px 20px;
+}

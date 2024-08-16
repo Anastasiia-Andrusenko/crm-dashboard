@@ -1,0 +1,265 @@
+.welcome {
+	color: #000;
+	font-family: Poppins;
+	font-size: 24px;
+	margin-bottom: 51px;
+}
+
+.section {
+	position: relative;
+	width: 90vw;
+	height: fit-content;
+	padding: 20px 12px 100px 12px;
+	background: $second-background-color;
+	border-radius: 30px;
+	filter: drop-shadow(0px 10px 60px rgba(226, 236, 249, 0.5));
+
+	@media screen and (min-width: $tablet) {
+		width: 90vw;
+		height: fit-content;
+		padding: 50px 30px 100px 30px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 1000px;
+		height: 840px;
+		padding: 30px 39px 41px 39px;
+	}
+}
+
+.title {
+	color: #000;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: -0.22px;
+	margin-bottom: 7px;
+
+	@media screen and (min-width: $tablet) {
+		font-size: 20px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 22px;
+	}
+}
+
+.description {
+	color: $accent-color;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: -0.14px;
+}
+
+.table {
+	background-color: transparent;
+}
+
+.table__title {
+	@extend %list;
+	border-bottom: 1px solid #eee;
+	height: 68px;
+}
+
+.table__title-head {
+	color: #b5b7c0;
+	font-family: Poppins;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: -0.14px;
+	text-align: left;
+	padding: 0;
+
+	@media screen and (min-width: $tablet) {
+		font-size: 14px;
+	}
+}
+
+.table__raw {
+	height: 68px;
+	border-bottom: 1px solid #eee;
+	transition: all 250ms $cubic-bezier;
+
+	&:hover {
+		transform: scale(1.02);
+		border-color: $accent-color;
+	}
+}
+
+.table__raw-text {
+	color: $text-main-color;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: -0.14px;
+
+	@media screen and (min-width: $tablet) {
+		font-size: 14px;
+	}
+}
+
+.st {
+	text-align: center;
+}
+
+.status {
+	display: block;
+	text-align: center;
+	width: 8px;
+	border-radius: 50%;
+	padding: 4px;
+	margin: auto;
+	font-size: 0px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: -0.14px;
+
+	@media screen and (min-width: $tablet) {
+		font-size: 14px;
+		width: 84px;
+		border-radius: 4px;
+		margin-left: auto;
+		margin-right: 4px;
+	}
+}
+
+.inactive_btn {
+	border: 1px solid #df0404;
+	background: #ffc5c5;
+	color: #df0404;
+}
+
+.active_btn {
+	border: 1px solid #00b087;
+	background: rgba(22, 192, 152, 0.38);
+	color: #008767;
+}
+
+.pagination__info {
+	position: absolute;
+	bottom: 41px;
+	left: 20px;
+	color: #b5b7c0;
+	font-size: 11px;
+	font-weight: 400;
+	letter-spacing: -0.14px;
+	margin-top: 32px;
+
+	@media screen and (min-width: $tablet) {
+		bottom: 41px;
+		left: 38px;
+		font-size: 14px;
+	}
+}
+
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	position: absolute;
+	right: 20px;
+	bottom: 40px;
+
+	@media screen and (min-width: $tablet) {
+		bottom: 40px;
+		right: 40px;
+	}
+
+	&__button {
+		width: 26px;
+		height: 24px;
+		background-color: $btn-disable-bg;
+		border: 1px solid #eee;
+		border-radius: 4px;
+		color: $btn-disable-txt;
+		font-size: 12px;
+		font-weight: 500;
+		text-align: center;
+		letter-spacing: -0.12px;
+		cursor: pointer;
+		transition: all 250ms $cubic-bezier;
+
+		&:hover {
+			background-color: $accent-color;
+			color: $current-text-color;
+		}
+
+		&--prev,
+		&--next {
+			width: 26px;
+		}
+
+		&.active {
+			background-color: $current-background-color;
+			color: $current-text-color;
+		}
+	}
+
+	&__ellipsis {
+		color: $btn-disable-txt;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 32px;
+	}
+}
+
+.mobile,
+.mobile_row {
+	display: none;
+
+	@media screen and (min-width: $tablet) {
+		display: inherit;
+	}
+}
+
+.mobile_row {
+	@media screen and (min-width: $tablet) {
+		display: table-cell;
+	}
+}
+
+.search {
+	width: 80vw;
+	max-width: 300px;
+	height: 38px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 10px;
+	background: #f9fbff;
+	padding: 7px 8px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(147, 147, 191, 0.1);
+	-moz-box-shadow: 0px 0px 1px 1px rgba(147, 147, 191, 0.1);
+	box-shadow: 0px 0px 1px 1px rgba(147, 147, 191, 0.1);
+
+	@media screen and (min-width: $tablet) {
+		position: absolute;
+		top: 44px;
+		right: 53px;
+		width: 216px;
+		height: 38px;
+	}
+}
+
+.search__icon {
+}
+
+.search__icon:hover {
+	cursor: pointer;
+	stroke: $current-background-color;
+	fill: white;
+}
+
+.search__input {
+	border: none;
+	background-color: transparent;
+	width: 174px;
+}
+
+.search__input::placeholder {
+	color: #b5b7c0;
+	font-size: 12px;
+	letter-spacing: -0.12px;
+}

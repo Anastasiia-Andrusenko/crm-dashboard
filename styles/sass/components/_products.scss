@@ -1,0 +1,105 @@
+.prodoct__list {
+	@extend %list;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.prodoct__card {
+	position: relative;
+	padding: 10px;
+	width: 280px;
+	background: $second-background-color;
+	border-radius: 30px;
+	filter: drop-shadow(0px 10px 60px rgba(226, 236, 249, 0.5));
+	transition: all 250ms $cubic-bezier;
+
+	@media screen and (min-width: $tablet) {
+		padding: 20px;
+		width: 360px;
+	}
+	@media screen and (min-width: $desktop) {
+	}
+}
+
+.prodoct__title {
+	color: #000;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: -0.22px;
+	margin-bottom: 7px;
+	transition: all 250ms $cubic-bezier;
+
+	@media screen and (min-width: $tablet) {
+		font-size: 20px;
+	}
+	@media screen and (min-width: $desktop) {
+		font-size: 22px;
+	}
+}
+
+.prodoct__description {
+	color: $accent-color;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: -0.14px;
+	transition: all 250ms $cubic-bezier;
+	@media screen and (min-width: $tablet) {
+		font-size: 13px;
+	}
+	@media screen and (min-width: $desktop) {
+		font-size: 14px;
+	}
+}
+
+.prodoct__text {
+	margin-top: 10px;
+	font-size: 14px;
+
+	@media screen and (min-width: $tablet) {
+		font-size: 15px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 16px;
+	}
+}
+
+.prodoct__icon {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	display: block;
+	fill: $text-second-color;
+	width: 30px;
+	height: 30px;
+
+	transition: all 250ms $cubic-bezier;
+
+	@media screen and (min-width: $tablet) {
+		width: 40px;
+		height: 40px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+.prodoct__card:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+	background-color: $current-background-color;
+	color: $current-text-color;
+
+	.prodoct__icon {
+		fill: white;
+	}
+
+	.prodoct__title {
+		color: $current-text-color;
+	}
+}

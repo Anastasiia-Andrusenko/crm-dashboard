@@ -1,0 +1,174 @@
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 36px 28px 76px 28px;
+	background-color: $second-background-color;
+	width: 306px;
+	height: 100vh;
+	filter: drop-shadow(0px 10px 60px rgba(226, 236, 249, 0.5));
+}
+
+.sidebar__logo {
+	display: flex;
+	color: #000;
+	font-size: 26px;
+	font-weight: 600;
+	letter-spacing: 0.26px;
+}
+
+.sidebar__logo-icon {
+	width: 37px;
+	height: 37px;
+	margin-right: 8px;
+}
+
+.sidebar__logo-version {
+	color: #838383;
+	font-size: 10px;
+	font-weight: 400;
+	letter-spacing: -0.1px;
+}
+
+.menu-wrapper {
+}
+
+.sidebar__nav {
+	height: auto;
+	margin-top: 66px;
+	color: $text-second-color;
+}
+
+.sidebar__menu {
+	@extend %list;
+}
+
+.sidebar__item {
+	width: 250px;
+	height: 46px;
+
+	border-radius: 8px;
+	transition: all 200ms $cubic-bezier;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $accent-color;
+	}
+}
+
+.current {
+	background-color: $current-background-color;
+	color: $current-text-color;
+}
+
+.current_text {
+	color: $current-text-color;
+}
+
+.sidebar__link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 11px 8px 11px 11px;
+	font-size: 14px;
+	letter-spacing: -0.14px;
+	color: #9197b3;
+	transition: all 200ms $cubic-bezier;
+
+	.sidebar__item:hover & {
+		color: $current-text-color;
+	}
+}
+
+.sidebar__link-content {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+
+.fill {
+	fill: $text-second-color;
+	transition: all 200ms $cubic-bezier;
+
+	.sidebar__item:hover & {
+		fill: $current-text-color;
+	}
+
+	&.current-i,
+	&.current_text {
+		transition: all 200ms $cubic-bezier;
+		fill: $current-text-color;
+
+		.sidebar__item:hover & {
+			fill: $current-text-color;
+		}
+	}
+}
+
+.stroke {
+	fill: none;
+	stroke: $text-second-color;
+	transition: all 200ms $cubic-bezier;
+
+	.sidebar__item:hover & {
+		stroke: $current-text-color;
+	}
+
+	&.current-i,
+	&.current_text {
+		stroke: $current-text-color;
+		transition: all 200ms $cubic-bezier;
+
+		.sidebar__item:hover & {
+			stroke: $current-text-color;
+		}
+	}
+}
+
+.sidebar__link-chevron {
+	width: 16px;
+	height: 16px;
+	stroke: $text-second-color;
+	fill: none;
+	transition: all 200ms $cubic-bezier;
+
+	&.current-i {
+		stroke: $current-text-color;
+	}
+
+	.sidebar__item:hover & {
+		stroke: $current-text-color;
+	}
+}
+
+.user {
+	display: flex;
+}
+
+.user__avatar {
+	width: 42px;
+	height: 42px;
+	margin-right: 12px;
+	background-color: #757575;
+	background-image: url('../../../img/avatar.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 50%;
+}
+
+.user__info {
+}
+
+.user__info-name {
+	display: block;
+	color: #000;
+	letter-spacing: 0.14px;
+}
+
+.user__info-role {
+	display: block;
+	color: #757575;
+	font-size: 12px;
+	letter-spacing: 0.12px;
+}

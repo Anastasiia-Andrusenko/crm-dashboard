@@ -1,0 +1,16 @@
+@import './sass/utils/variables';
+@import './sass/utils/breakpoints';
+@import './sass/utils/mixins';
+@import './sass/utils/placeholders';
+
+@import './sass/base/base-styles';
+@import './sass/base/fonts';
+
+@import './sass/components/sidebar';
+@import './sass/components/home';
+@import './sass/components/customers';
+@import './sass/components/dashboard';
+@import './sass/components/products';
+@import './sass/components/income';
+
+@import './sass/components/mob-menu';
